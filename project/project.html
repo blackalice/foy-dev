@@ -8,44 +8,16 @@
 <link href="project.css" rel="stylesheet" type="text/css">
 <script src="https://use.typekit.net/tve3icz.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="../css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+<script type="text/javascript" src="../js/jquery.lazyload.js"></script>
 <script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
+	$(function() {
+    $("img.lazy").lazyload({ effect : "fadeIn", threshold : 200});
+});
+	</script>
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 <navbarbackground>
 </navbarbackground>
 </head>
@@ -53,7 +25,6 @@ function showSlides(n) {
 <body>
 
 <div class="container_14">
-
 
 <navbar class="grid_14">
 <logo class="grid_1">
@@ -92,7 +63,7 @@ function showSlides(n) {
 		VOIA - FUTURESONG ALBUM ART
 		</title>
 		
-		<statcontainer class="grid_11"> 
+	<!--	<statcontainer class="grid_11"> 
 			<statinner>
 				<h3>DATE</h3>
 				<p class="statp"> 2016/17 </p>
@@ -107,7 +78,7 @@ function showSlides(n) {
 			</statinner>
 			
 
-		</statcontainer>
+		</statcontainer>-->
 
 		
 		
@@ -123,23 +94,41 @@ Sed in neque nisi. Sed rhoncus tempor sem. Maecenas at convallis neque. Aliquam 
 	
 	<h2> INSIDE AND CD ART </h2>
 
-	<img src="../../images/futuresong/inside.jpg" > 
+	<img class="lazy" data-original="../images/futuresong/inside.jpg" > 
 
 	
 	<h2> CLOSE UP DETAILS </h2>
 	
-	<img class="twinimage floatleft hover-shadow" onclick="openModal();currentSlide(1)" src="../../images/futuresong/side1.jpg" > 
-	<img class="twinimage floatright hover-shadow" onclick="openModal();currentSlide(1)" src="../../images/futuresong/side2.jpg"  > 
+	<div class="chocolat-parent" data-chocolat-title="set title">
+
+    <a class="chocolat-image" href="../images/futuresong/side1.jpg" title="caption image 2">
+	<img class="twinimage floatleft lazy"  data-original="../images/futuresong/side1.jpg" > 
+    </a>
+    <a class="chocolat-image" href="../images/futuresong/side2.jpg" title="caption image 3">
+      <img class="twinimage floatright lazy" data-original="../images/futuresong/side2.jpg"  > 
+    </a>
+</div>
+	
 
 	<h2> OBI AND BACK COVER</h2>
-	<img src="../../images/futuresong/backobi.jpg" > 
+	<img class="lazy" data-original="../images/futuresong/backobi.jpg" > 
 	
+
+
+
+
 
 </div>			
 			
 		
 	
-					
+<script>
+	
+$(document).ready(function(){
+    $('.chocolat-parent').Chocolat();
+});
+	$('selector').Chocolat()
+</script>
 						
 								
 </body>
