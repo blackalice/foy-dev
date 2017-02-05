@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+}
+
+
+navbar{
+	height: 75px;
+	width: 100%;
+	max-width: 1120px;
+	display: block;
+	background-color:#0b0b0b;
+	position:absolute;
+}
+
+navbarbackground{
+	width: 100%;
+	height: 75px;
+	display: block;
+	background-color:#0b0b0b;
+	float: left;
+	z-index: -3;
+ }
+
+
+logo {
+	display: block;
+	height: 100%;
+	float: left;
+}
+
+
+.logosize{	
+	width: 50%; 
+	height: auto;
+	padding-top: 17px;
+}
+	
+
+
+.logosvg {
+	fill: #ec008c;
+	width: 30px;
+	height: auto;
+	
+}
+
+
+
+
+/*PORTFOLIO*/
+row1{
+	height:350px;
+	width:100%;
+	margin-top: 30px;
+	display:inline-block;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	overflow:hidden;	
+	float:left;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+.futuresong{
+	background-image:url(images/futuresong.jpg);
+}
+
+
+
+row2{
+	height:250px;
+	width: 48%;
+	margin-top: 30px;
+	display:inline-block;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	overflow:hidden;	
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+	float:right;
+}
+
+.row2-1{
+	float:left;
+	background-image:url(images/peugeot.jpg);
+	margin-right: 4%;
+	border: 5px;
+	border-color: #b8293a;
+	border-style: solid;
+}
+
+.row2-2{
+	float:right;
+	background-image:url(images/gracemay.jpg);
+}
+
+
+row3{
+	height:250px;
+	margin-top: 30px;
+	display:inline-block;
+	float: right;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+	overflow:hidden;	
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+
+.row3-1{
+	float:left;
+	background-image:url(images/syachi.jpg);
+	margin-right: 4%;
+	width:31%;
+}
+
+.row3-2{
+	float:left;
+	background-image:url(images/radial.jpg);
+	margin-right: 4%;
+	width:30%;
+}
+
+.row3-3{
+	float:left;
+	background-image:url(images/cyber.jpg);
+	width:31%;
+}
+
+
+
+
+/*LIST*/
+
+ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	height: 100%;
+	font-family: 'Overpass', sans-serif;
+	font-size:12pt;
+	
+}
+
+.currentpage{
+	color:#ec008c;
+	font-weight:800;
+}
+
+li{
+    float: right;
+	padding-top: 14px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ec008c;
+	height: 100%;
+	top: auto;
+	bottom: auto;
+	display: block;
+}
+
+
+
+
+
+
+@media screen and (min-width : 320px) and (max-width : 720px) {
+	
+	
+		
+	row1{
+	margin-top:0px;
+		height:250px;
+	}
+		
+	row2{
+	margin-top:0px;
+			height:250px;
+	}
+	
+	row3{
+	margin-top:0px;
+			height:250px;
+	}
+	
+.row2-1{
+	float:right;
+	
+	width:100%;
+	clear:both;
+	margin-right: 0px;
+}
+	.row2-2{
+	float:right;
+
+	clear:both;
+	width:100%;
+	margin-right: 0px;
+}
+	
+	.row3-1{
+	float:right;
+	width:100%;
+	clear:both;
+	margin-right: 0px;
+}
+	.row3-2{
+	float:right;
+	clear:both;
+	width:100%;
+	margin-right: 0px;
+}
+	
+	.row3-3{
+	float:right;
+	clear:both;
+	width:100%;
+	margin-right: 0px;
+}
+	
+	
+	
+	
+	
+
+}
