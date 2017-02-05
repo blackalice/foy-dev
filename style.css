@@ -3,7 +3,10 @@
 body{
 	margin:0px;
 }
-
+.floatright
+{float:right}
+.floatleft
+{float:left}
 
 navbar{
 	height: 75px;
@@ -121,6 +124,7 @@ row3{
 	background-image:url(images/syachi.jpg);
 	margin-right: 4%;
 	width:31%;
+	
 }
 
 .row3-2{
