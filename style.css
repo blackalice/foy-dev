@@ -184,6 +184,14 @@ li a:hover {
 
 
 
+footer{
+	width:100%;
+	height: 200px;
+	display:inline-block;
+	background-color:#e5160e;
+	margin-top:30px;
+
+}
 
 
 
