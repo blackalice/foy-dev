@@ -35,8 +35,8 @@ headerbg{
 
 projectimg{
 	width:100%;
-	height:725px;
-	max-width: 1120px;
+	height:850px;
+	max-width: 1300px;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:30px;
@@ -55,7 +55,7 @@ projectimg{
 /*Content Images*/
 images{
 	display: inline-block;
-	max-width: 1120px;
+	max-width: 1300px;
 	min-height: 500px;
 	margin-right:auto;
 	margin-left:auto;
@@ -222,6 +222,8 @@ p{
 		margin-bottom:30px;
 
 	}
+	
+	
 	
 	images{
 		width:100vw;
