@@ -147,15 +147,18 @@ row3{
 
 /*LIST*/
 
-ul {
+ul.topnav {
    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 	height: 100%;
 	font-family: 'Overpass', sans-serif;
 	font-size:12pt;
-	
+	overflow:visible;
+}
+
+.icon{
+	visibility:hidden;
 }
 
 .currentpage{
@@ -199,7 +202,40 @@ footer{
 
 @media screen and (min-width : 320px) and (max-width : 720px) {
 	
+	.icon{
+	visibility:visible;
+}
+
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+	overflow:visible;
+  }
+    ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+		overflow:visible;
+
+  }
+  
+  
+  
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+		overflow:visible;
+
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+  }
+
 	
+
 		
 	row1{
 	margin-top:0px;
@@ -256,4 +292,4 @@ footer{
 	
 	
 
-}
+
