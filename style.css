@@ -201,23 +201,44 @@ footer{
 
 
 @media screen and (min-width : 320px) and (max-width : 720px) {
+	.currentpage{
+	color:#ec008c;
+	font-weight:800;
+}
+	
+	
+	ul.topnav {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	text-align:center;
+	font-family: 'Overpass', sans-serif;
+	font-size:12pt;
+	overflow:visible;
+	
+}
 	
 	.icon{
 	visibility:visible;
 }
 
   ul.topnav li {display: none;}
+  
   ul.topnav li.icon {
     float: right;
     display: inline-block;
 	overflow:visible;
   }
-    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive {position: relative;
+	
+	}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
-		overflow:visible;
+	overflow:visible;
+
 
   }
   
@@ -225,13 +246,16 @@ footer{
   
   ul.topnav.responsive li {
     float: none;
-    display: inline;
-		overflow:visible;
+    display: block;
+	overflow:visible;
+  text-align: center;
+  	background-color:#0b0b0b;
 
   }
+  
   ul.topnav.responsive li a {
     display: block;
-    text-align: right;
+    text-align: center;
   }
 
 	
