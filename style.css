@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+
 body{
 	margin:0px;
+	overflow:scroll;
 }
 .floatright
 {float:right}
