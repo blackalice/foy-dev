@@ -29,7 +29,6 @@ headerbg{
 	display:block;
 	overflow:hidden;
 	width:100%;
-
 }
 
 
@@ -118,8 +117,9 @@ title{
 	font-size:3em;
 	font-family: "alternate-gothic-no-3-d";
 	color: #e5160e;
-	line-height: 0.9em
+	line-height: 0.9em;
 }
+
 
 
 
@@ -178,37 +178,9 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.padding15 {padding-right:15px;
+	padding-left:15px;}
+	
 
 
 
@@ -220,9 +192,11 @@ p{
 		background-size: contain;
 		margin-top:0px;
 		margin-bottom:30px;
-
 	}
 	
+
+.padding15 {padding-right:0px;
+	padding-left:0px;}
 	
 	
 	images{
@@ -238,3 +212,32 @@ p{
 	
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
