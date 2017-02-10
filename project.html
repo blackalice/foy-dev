@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-<link href="../grid.css" rel="stylesheet" type="text/css">
-<link href="../style.css" rel="stylesheet" type="text/css">
-<link href="project.css" rel="stylesheet" type="text/css">
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/project.css" rel="stylesheet" type="text/css">
 <script src="https://use.typekit.net/tve3icz.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,800" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="../js/jquery.chocolat.js"></script>
-<link rel="stylesheet" href="../css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-<script type="text/javascript" src="../js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
 <script>
 	$(function() {
     $("img.lazy").lazyload({ effect : "fadeIn", threshold : 0});
@@ -29,8 +29,8 @@
 <div class="container_14">
 
 
-<navbar class="grid_14">
-<a href="../index.html">
+<navbar class="grid_13">
+<a href="index.html">
 <logo class="grid_1">
 	
 	<svg class="logosize" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 29.4">
@@ -40,11 +40,13 @@
 </logo>
 </a>
 
-<ul>
-  <li><a class="currentpage" href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
+<ul class="topnav" id="myTopnav">
+  <li><a class="currentpage" href="project/default.asp">Home</a></li>
+  <li><a href="project/news.asp">News</a></li>
+  <li><a href="project/contact.asp">Contact</a></li>
+  <li><a href="project/about.asp">About</a></li>
+   <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
 </ul>
 </navbar>
 
@@ -56,12 +58,12 @@
 <headerbg>
 	<div class="container_14">
 		<projectimg class="grid_13">
-        	<img class="image lazy" style="visibility: hidden;" data-original="../images/futuresong.jpg" > 
+        	<img class="image lazy" style="visibility: hidden;" data-original="/images/futuresong.jpg" > 
 		</projectimg>
 	</div>
 	</headerbg>
 	
-	
+	<padding>
 <div class="container_14">	
 	<titlecontainer>
 
@@ -100,8 +102,8 @@ Sed in neque nisi. Sed rhoncus tempor sem. Maecenas at convallis neque. Aliquam 
 		<div class="chocolat-parent" data-chocolat-title="set title">
 	<h2> INSIDE AND CD ART </h2>
 
-  <a class="chocolat-image" href="../images/futuresong/inside.jpg" title="caption image 2">
-	<img class="image lazy"  data-original="../images/futuresong/inside.jpg" > 
+  <a class="chocolat-image" href="images/futuresong/inside.jpg" title="caption image 2">
+	<img class="image lazy"  data-original="images/futuresong/inside.jpg" > 
     </a>
 
 	
@@ -109,26 +111,40 @@ Sed in neque nisi. Sed rhoncus tempor sem. Maecenas at convallis neque. Aliquam 
 	
 
 
-    <a class="chocolat-image" href="../images/futuresong/side1.jpg" title="caption image 2">
-	<img class="twinimage floatleft lazy"  data-original="../images/futuresong/side1.jpg" > 
+    <a class="chocolat-image" href="images/futuresong/side1.jpg" title="caption image 2">
+	<img class="twinimage floatleft lazy"  data-original="images/futuresong/side1.jpg" > 
     </a>
-    <a class="chocolat-image" href="../images/futuresong/side2.jpg" title="caption image 3">
-      <img class="twinimage floatright lazy" data-original="../images/futuresong/side2.jpg"  > 
+    <a class="chocolat-image" href="images/futuresong/side2.jpg" title="caption image 3">
+      <img class="twinimage floatright lazy" data-original="images/futuresong/side2.jpg"  > 
     </a>
 	
 
 	<h2> OBI AND BACK COVER</h2>
-  <a class="chocolat-image" href="../images/futuresong/backobi.jpg" title="caption image 2">
-	<img class="image lazy"  data-original="../images/futuresong/backobi.jpg" > 
+  <a class="chocolat-image" href="images/futuresong/backobi.jpg" title="caption image 2">
+	<img class="image lazy"  data-original="images/futuresong/backobi.jpg" > 
     </a>
 </div>
 
 </div>			
-		
+		</padding>
 	<footer>
 	</footer>
 		
 	
+    
+   <script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+</script> 
+    
 <script>
 	
 $(document).ready(function(){
