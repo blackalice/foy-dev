@@ -219,10 +219,8 @@ footer{
 
 
 
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 1080px), only screen and (max-device-width: 1080px) {
+
 	
 	/*nav*/
 	
