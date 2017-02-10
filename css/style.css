@@ -4,6 +4,7 @@
 padding{
 	margin-right:15px;
 	margin-left:15px;
+	padding-top:75px;
 	display:block;
 }
 body{
@@ -22,7 +23,9 @@ navbar{
 	max-width: 1300px;
 	display: block;
 	background-color:#0b0b0b;
-	position:absolute;
+	position:fixed;
+	z-index: 51;
+	
 }
 
 navbarbackground{
@@ -31,7 +34,8 @@ navbarbackground{
 	display: block;
 	background-color:#0b0b0b;
 	float: left;
-	z-index: -3;
+	z-index: 50;
+	position:fixed;
  }
 
 
@@ -39,6 +43,8 @@ logo {
 	display: block;
 	height: 100%;
 	float: left;
+	padding-left: 10px;
+	
 }
 
 
@@ -46,6 +52,7 @@ logo {
 	width: 50%; 
 	height: auto;
 	padding-top: 17px;
+	
 }
 	
 
@@ -166,6 +173,7 @@ ul.topnav {
 	font-family: 'Overpass', sans-serif;
 	font-size:12pt;
 	overflow:visible;
+	margin-right:15px;
 }
 
 .icon{
@@ -211,7 +219,10 @@ footer{
 
 
 
-@media screen and (min-width : 320px) and (max-width : 720px) {
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
 	
 	/*nav*/
 	
