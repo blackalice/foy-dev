@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="grid.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
 <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,800" rel="stylesheet">
 <navbarbackground>
 </navbarbackground>
@@ -12,7 +17,7 @@
 <body>
 <div class="container_14">
 
-<navbar class="grid_13">
+<navbar class="grid_13 animated">
 
 <logo class="grid_1">
 	
@@ -22,40 +27,55 @@
 	
 </logo>
 
-<ul>
+<ul class="topnav" id="myTopnav">
   <li><a class="currentpage" href="default.asp">Home</a></li>
   <li><a href="news.asp">News</a></li>
   <li><a href="contact.asp">Contact</a></li>
   <li><a href="about.asp">About</a></li>
+   <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
 </ul>
 </navbar>
 
-<a href="project/project.html">
+<padding>
+<a href="project.html">
+<row1 class="futuresong animated">
 
-<row1 class="futuresong">
 
 	
 </row1>
 </a>
-<row2 class="row2-1">
+<row2 class="row2-1 animated">
 </row2>
 
-<row2 class="row2-2">
+<row2 class="row2-2 animated">
 </row2>
 
 
-<row3 class="row3-1">
+<row3 class="row3-1 animated">
 </row3>
-<row3 class="row3-2">
+<row3 class="row3-2 animated">
 </row3>
-<row3 class="row3-3">
+<row3 class="row3-3 animated">
 </row3>
 	
-
+</padding>
 
 </div>
-<footer>
-</footer>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+</script>
+
+
 
 
 

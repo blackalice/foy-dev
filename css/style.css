@@ -1,9 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+padding{
+	margin-right:15px;
+	margin-left:15px;
+	display:block;
+}
 body{
 	margin:0px;
 	overflow:scroll;
+	
 }
 .floatright
 {float:right}
@@ -13,7 +19,7 @@ body{
 navbar{
 	height: 75px;
 	width: 100%;
-	max-width: 1120px;
+	max-width: 1300px;
 	display: block;
 	background-color:#0b0b0b;
 	position:absolute;
@@ -71,7 +77,7 @@ row1{
 }
 
 .futuresong{
-	background-image:url(images/futuresong.jpg);
+	background-image:url(../images/futuresong.jpg);
 }
 
 
@@ -89,11 +95,12 @@ row2{
 	background-size:cover;
 	background-position: center;
 	float:right;
+	
 }
 
 .row2-1{
 	float:left;
-	background-image:url(images/peugeot.jpg);
+	background-image:url(../images/peugeot.jpg);
 	margin-right: 4%;
 	border: 5px;
 	border-color: #b8293a;
@@ -102,7 +109,7 @@ row2{
 
 .row2-2{
 	float:right;
-	background-image:url(images/gracemay.jpg);
+	background-image:url(../images/gracemay.jpg);
 }
 
 
@@ -123,7 +130,7 @@ row3{
 
 .row3-1{
 	float:left;
-	background-image:url(images/syachi.jpg);
+	background-image:url(../images/syachi.jpg);
 	margin-right: 4%;
 	width:31%;
 	
@@ -131,31 +138,38 @@ row3{
 
 .row3-2{
 	float:left;
-	background-image:url(images/radial.jpg);
+	background-image:url(../images/radial.jpg);
 	margin-right: 4%;
 	width:30%;
 }
 
 .row3-3{
 	float:left;
-	background-image:url(images/cyber.jpg);
+	background-image:url(../images/cyber.jpg);
 	width:31%;
 }
 
+.animated{
+	  transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;}
 
 
 
 /*LIST*/
 
-ul {
+ul.topnav {
    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 	height: 100%;
 	font-family: 'Overpass', sans-serif;
 	font-size:12pt;
-	
+	overflow:visible;
+}
+
+.icon{
+	visibility:hidden;
 }
 
 .currentpage{
@@ -199,21 +213,82 @@ footer{
 
 @media screen and (min-width : 320px) and (max-width : 720px) {
 	
+	/*nav*/
 	
+	ul.topnav {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+	height: 100%;
+	text-align:center;
+	font-family: 'Overpass', sans-serif;
+	font-size:12pt;
+	overflow:visible;
+	
+	
+}
+	
+	.icon{
+	visibility:visible;
+}
+
+  ul.topnav li {display: none;}
+  
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+	overflow:visible;
+  }
+    ul.topnav.responsive {position:absolute;
+	width:100%;
+	
+	
+	}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	overflow:visible;
+
+
+  }
+  
+  
+  
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+	overflow:visible;
+  	background-color:#0b0b0b;
+
+  }
+  
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+	
+  }
+
+	
+/*folio*/
 		
 	row1{
-	margin-top:0px;
+	margin-top:10px;
 		height:250px;
+			margin-bottom:10px;
 	}
 		
 	row2{
 	margin-top:0px;
 			height:250px;
+				margin-bottom:10px;
+			
 	}
 	
 	row3{
 	margin-top:0px;
 			height:250px;
+				margin-bottom:10px;
 	}
 	
 .row2-1{
@@ -222,6 +297,7 @@ footer{
 	width:100%;
 	clear:both;
 	margin-right: 0px;
+		margin-bottom:10px;
 }
 	.row2-2{
 	float:right;
@@ -229,6 +305,7 @@ footer{
 	clear:both;
 	width:100%;
 	margin-right: 0px;
+		margin-bottom:10px;
 }
 	
 	.row3-1{
@@ -236,12 +313,14 @@ footer{
 	width:100%;
 	clear:both;
 	margin-right: 0px;
+		margin-bottom:10px;
 }
 	.row3-2{
 	float:right;
 	clear:both;
 	width:100%;
 	margin-right: 0px;
+		margin-bottom:10px;
 }
 	
 	.row3-3{
@@ -249,11 +328,13 @@ footer{
 	clear:both;
 	width:100%;
 	margin-right: 0px;
+	margin-bottom:10px;
 }
 	
 	
 	
 	
 	
+
 
 }
