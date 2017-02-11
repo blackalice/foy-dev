@@ -7,9 +7,44 @@ padding{
 	padding-top:75px;
 	display:block;
 }
+
+
+intro{
+background: linear-gradient(229deg, #eb008b, #ff8ff2, #7f0c4d);
+background-size: 600% 600%;
+
+-webkit-animation: maingradient 30s ease infinite;
+-moz-animation: maingradient 30s ease infinite;
+animation: maingradient 30s ease infinite;
+
+margin-top:75px;
+	display:inline-block;
+
+	width:100%;
+	height:100vh;
+}
+
+@-webkit-keyframes maingradient {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes maingradient {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes maingradient { 
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+
+
 body{
 	margin:0px;
 	overflow:scroll;
+	background-color:#121212;
 	
 }
 .floatright
@@ -64,12 +99,51 @@ logo {
 	
 }
 
+.h1{
+	font-size:3em;
+	font-family: "alternate-gothic-no-3-d";
+	color: #e5160e;
+	line-height: 0.9em;
+}
 
+
+.item {
+ background: linear-gradient(270deg, #64ae9b, #c34516, #8b0dd2);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+	text-align: left;
+	line-height: 0.7em;
+	
+  }
+
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
 
 /*PORTFOLIO*/
 row1{
-	height:350px;
+	height:600px;
 	width:100%;
 	margin-top: 30px;
 	display:inline-block;
@@ -90,7 +164,7 @@ row1{
 
 
 row2{
-	height:250px;
+	height:400px;
 	width: 48%;
 	margin-top: 30px;
 	display:inline-block;
@@ -217,16 +291,46 @@ footer{
 
 }
 
+/*MOUSE OVER*/
 
-.test1{display:none}
-.test2:hover .test1{
-	display : block;
-background-color: black;
-width:100%;
-height:100%;}
+.test1{
+
+	 opacity: 0;
+}
+.test2:hover .test1{	
+
+	background-color: rgba(0,0,0,0.8);
+	 opacity: 1;
+	width:100%;
+	height:100%;
+	display: flex;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+	text-align:center;
+	  transition: opacity .1s ease-in-out;
+   -moz-transition: opacity .1s ease-in-out;
+   -webkit-transition: opacity .1s ease-in-out;
+	padding: 5 5 5 5;
+	color:white;
+	   -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	cursor:pointer;
+}
 
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+
+
+hiddenportfolio{
+	visibility: hidden;
+	overflow:hidden
+}
+
+
+@media screen and (min-width : 320px) and (max-width : 720px) {
 
 
 	

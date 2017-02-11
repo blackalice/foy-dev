@@ -7,6 +7,9 @@
 	fill: #e5160e;
 
 }
+body{
+	background-color:white;
+}
 
 li a:hover {
     background-color: #e5160e;
@@ -113,12 +116,7 @@ title{
 
 
 
-.h1{
-	font-size:3em;
-	font-family: "alternate-gothic-no-3-d";
-	color: #e5160e;
-	line-height: 0.9em;
-}
+
 
 
 
